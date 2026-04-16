@@ -23,8 +23,8 @@ async function predict() {
         const isPhishing = prob >= 0.5;
 
         resDiv.innerHTML = isPhishing 
-            ? `<span class="text-danger">⚠️ PHISHING (${(prob*100).toFixed(1)}%)</span>`
-            : `<span class="text-success">✅ SAFE (${((1-prob)*100).toFixed(1)}%)</span>`;
+            ? `<span class="text-danger">PHISHING (${(prob*100).toFixed(1)}%)</span>`
+            : `<span class="text-success">SAFE (${((1-prob)*100).toFixed(1)}%)</span>`;
             
     } catch (e) {
         console.error(e);
